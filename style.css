@@ -11,6 +11,12 @@ body {
   line-height: 1.6;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 h1, h2, h3, h4 {
   margin-top: 0;
   line-height: 1;
@@ -51,9 +57,20 @@ header.hero {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 0;
   background: linear-gradient(to bottom, var(--light-green), white);
   gap: 8rem;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8rem;
+  width: 100%;
 }
 
 .hero-text {
@@ -100,7 +117,13 @@ header.hero {
 
 .stats {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 0;
+}
+
+.stats-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .stats p {
@@ -150,7 +173,17 @@ header.hero {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 2rem;
+  padding: 2rem 0;
+}
+
+.info-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
 }
 
 .info-text {
@@ -204,7 +237,13 @@ header.hero {
 }
 
 .contact {
-  padding: 2rem;
+  padding: 2rem 0;
+}
+
+.contact-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .contact-grid {
@@ -276,10 +315,16 @@ header.hero {
 
 /* Responsive */
 @media (max-width: 768px) {
-  header.hero {
+  .hero-content {
     text-align: center;
     justify-content: center;
     gap: 4rem;
+    padding: 0 1rem;
+  }
+  .stats-content,
+  .info-content,
+  .contact-content {
+    padding: 0 1rem;
   }
   .hero-buttons {
     justify-content: center;
@@ -288,7 +333,7 @@ header.hero {
     flex-direction: column;
     align-items: center;
   }
-  .info {
+  .info-content {
     flex-direction: column;
   }
   .contact-grid {

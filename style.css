@@ -198,10 +198,14 @@ header.hero {
   gap: 1rem;
   align-items: center;
   margin-top: 1rem;
+    border: 1px solid hsla(158, 64%, 52%, 0.2);
 }
 
 .tip img {
   max-width: 25%;
+  aspect-ratio: 1 / 1; /* Zorgt voor een vierkante afbeelding */
+  object-fit: cover; /* Zorgt ervoor dat de afbeelding niet vervormd wordt */
+  border-radius: .5rem; /* Maakt de afbeelding rond */
 }
 
 .how-it-works {

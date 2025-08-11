@@ -4,6 +4,12 @@
 	--dark: #5c6b73;
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
 	"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -347,6 +353,7 @@ header.hero {
 	.stats-grid {
 		flex-direction: column;
 		align-items: center;
+		gap: 1rem;
 	}
 	.stats-grid div {
 		width: 100%;
@@ -360,6 +367,13 @@ header.hero {
 	.tip {
 		margin-top: 0;
 		flex-basis: auto;
+		flex-direction: column;
+		text-align: center;
+	}
+	.tip img {
+		width: 100px;
+		height: 100px;
+		align-self: center;
 	}
 	.contact-grid {
 		flex-direction: column;

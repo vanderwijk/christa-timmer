@@ -294,6 +294,10 @@ footer {
   font-size: 0.9rem;
 }
 
+footer p {
+  color: white;
+}
+
 /* Animations */
 @keyframes slideUp {
   from {

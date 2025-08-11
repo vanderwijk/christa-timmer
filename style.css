@@ -196,16 +196,22 @@ header.hero {
   border-radius: 8px;
   display: flex;
   gap: 1rem;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 1rem;
-    border: 1px solid hsla(158, 64%, 52%, 0.2);
+  border: 1px solid hsla(158, 64%, 52%, 0.2);
+  flex-basis: 100%;
 }
 
 .tip img {
-  max-width: 25%;
-  aspect-ratio: 1 / 1; /* Zorgt voor een vierkante afbeelding */
-  object-fit: cover; /* Zorgt ervoor dat de afbeelding niet vervormd wordt */
-  border-radius: .5rem; /* Maakt de afbeelding rond */
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: .5rem;
+  flex-shrink: 0;
+}
+
+.tip div {
+  flex: 1;
 }
 
 .how-it-works {
@@ -332,10 +338,18 @@ header.hero {
   }
   .hero-buttons {
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .stats-grid {
     flex-direction: column;
     align-items: center;
+  }
+  .stats-grid div {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    flex: none;
   }
   .info-content {
     flex-direction: column;
